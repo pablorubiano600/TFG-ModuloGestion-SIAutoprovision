@@ -12,7 +12,7 @@
 
           try {
             //Incluimos la página que contiene la carga de la información desde el Módulo de Integración con el equipamiento (SIMULADO)  
-            //require("include-back/capacidad-equipamiento-bbdd.php");                  
+            require("include-back/gestion-plantillas-bbdd.php");                  
 
           } catch (Exception $e) {
               echo 'Caught exception: ',  $e->getMessage(), "\n";

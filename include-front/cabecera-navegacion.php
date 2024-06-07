@@ -139,6 +139,13 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">SI de Autoprovisión: Módulo de Gestión</a>
     <a class="navbar-brand" href="#">tfg.rubiano.es</a>
+    <div class='col-lg-12'>
+      <figure class="text-center">
+        <figcaption class="blockquote-footer">
+          <p><cite title="Source Title">Pablo Rubiano - TFG Grado en Ingeniería Informática de UNIR</cite></p>
+        </figcaption>
+      </figure>
+    <div>    
   </div>
 </nav>
 

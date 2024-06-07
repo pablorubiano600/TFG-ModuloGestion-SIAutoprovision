@@ -1,5 +1,11 @@
 <?php session_start();?>
 
+<!-- 
+ - Autor: Pablo Rubiano Sosa
+ - Descripción: Módulo de Gestión integrado en el SI de Autoprovisión
+ - Ámbito: Proyecto desarrollado como parte del Trabajo de Fin de Grado perteneciente al Grado en Ingeniería Informática de UNIR
+-->
+
 <!-- Inicializamos variables -->
 <?php require("include-back/inicializarvariables.php");?>
 

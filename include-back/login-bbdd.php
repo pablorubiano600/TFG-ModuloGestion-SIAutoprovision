@@ -51,13 +51,11 @@
 
     //Si las credenciales no han sido válidas informamos al usuario
     if (!$loginExitoso){
-        echo "<script type='text/javascript'>alert('Credenciales incorrectas');</script>";
-            
+        echo "<script type='text/javascript'>alert('Credenciales incorrectas');</script>";            
     }
-    else{
-        //Para Pruebas
+    else{       
         //En caso de ser correctas informamos: quién se ha logado y su rol
-        //echo "<script type='text/javascript'>alert('Has iniciado sesión como: ".$_SESSION['nombreUsuario']." con Rol: ".$_SESSION['rolUsuario']."');</script>";
+        echo "<script type='text/javascript'>alert('[SIMULACIÓN DE INTEGRACIÓN CON IAM]:\\nHas iniciado sesión como: ".$_SESSION['nombreUsuario']."\\ncon Rol: ".$_SESSION['rolUsuario']."');</script>";
     }
     
 ?>
