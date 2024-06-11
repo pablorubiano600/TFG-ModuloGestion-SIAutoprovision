@@ -78,7 +78,6 @@ CREATE TABLE `MG_plataforma`(
     `id_plataforma` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `nombre_plataforma` CHAR(255) NOT NULL,
     `aplicacionasociada` CHAR(255) NOT NULL,
-    `tareaasociada` BIGINT NOT NULL,
     `estado` CHAR(255) NOT NULL
 );
 ALTER TABLE

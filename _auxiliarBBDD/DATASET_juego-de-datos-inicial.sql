@@ -22,7 +22,8 @@ VALUES
 (DEFAULT, 'Gestión de Citas', 'Área Económica'),
 (DEFAULT, 'Gestión de Inventario', 'Área Económica'),
 (DEFAULT, 'Proxy Navegación', 'Área TIC'),
-(DEFAULT, 'Gestión Formación', 'Área RRHH')
+(DEFAULT, 'Gestión Formación', 'Área RRHH'),
+(DEFAULT, 'Gestión Ausencias', 'Área RRHH')
 ;
 
 
@@ -42,13 +43,13 @@ Estructura MG_plataforma
 INSERT INTO MG_plataforma
 (id_plataforma, nombre_plataforma, aplicacionasociada, tareaasociada, estado)
 VALUES
-(DEFAULT, 'Plataforma Web Corporativa', 1, 1, 'Vigente'),
-(DEFAULT, 'Plataforma Gestión de Nóminas', 2, 2, 'Vigente'),
-(DEFAULT, 'Plataforma Gestión RRHH', 3, 3, 'Vigente'),
-(DEFAULT, 'Plataforma Gestión de Citas', 4, 4, 'Vigente'),
-(DEFAULT, 'Plataforma Gestión de Inventario', 5, 5, 'Vigente'),
-(DEFAULT, 'Plataforma Proxy Navegación', 6, 6, 'Petición'),
-(DEFAULT, 'Plataforma Gestión Formación', 7, 7, 'Petición')
+(DEFAULT, 'Plataforma Web Corporativa', 1, 'Vigente'),
+(DEFAULT, 'Plataforma Gestión de Nóminas', 2, 'Vigente'),
+(DEFAULT, 'Plataforma Gestión RRHH', 3, 'Vigente'),
+(DEFAULT, 'Plataforma Gestión de Citas', 4, 'Vigente'),
+(DEFAULT, 'Plataforma Gestión de Inventario', 5, 'Vigente'),
+(DEFAULT, 'Plataforma Proxy Navegación', 6, 'Petición'),
+(DEFAULT, 'Plataforma Gestión Formación', 7, 'Petición')
 ;
 
 
@@ -282,3 +283,29 @@ VALUES
 (DEFAULT, 'infra@opf.gob', 'Rol Infraestructuras', 'infra'),
 (DEFAULT, 'desa@opf.gob', 'Rol Desarrollo', 'desa')
 ;
+
+
+/* ********************************************* */
+/*
+Estructura SIM_TAREAS:
+- id_TAREAS
+- descripcion
+- lanzador
+- asignado
+- fecha_lanzamiento
+- estado
+*/
+INSERT INTO SIM_TAREAS
+(id_TAREAS, descripcion, lanzador, asignado, fecha_lanzamiento, estado)
+VALUES
+(DEFAULT, 'Petición de Plataforma (ID: 1 - NOMBRE: Plataforma Web Corporativa)', 'desa@opf.gob', 'infra@opf.gob', '2024-05-15 08:30:15', 'Cerrada'),
+(DEFAULT, 'Petición de Plataforma (ID: 2 - NOMBRE: Plataforma Gestión de Nóminas)', 'desa@opf.gob', 'infra@opf.gob', '2024-05-18 16:20:44', 'Cerrada'),
+(DEFAULT, 'Petición de Plataforma (ID: 3 - NOMBRE: Plataforma Gestión RRHH)', 'desa@opf.gob', 'infra@opf.gob', '2024-05-19 12:47:00', 'Cerrada'),
+(DEFAULT, 'Petición de Plataforma (ID: 4 - NOMBRE: Plataforma Gestión de Citas)', 'desa@opf.gob', 'infra@opf.gob', '2024-05-20 09:03:12', 'Cerrada'),
+(DEFAULT, 'Petición de Plataforma (ID: 5 - NOMBRE: Plataforma Gestión de Inventario)', 'desa@opf.gob', 'infra@opf.gob', '2024-05-21 10:32:05', 'Cerrada'),
+(DEFAULT, 'Petición de Plataforma (ID: 6 - NOMBRE: Plataforma Proxy Navegación)', 'desa@opf.gob', 'infra@opf.gob', '2024-05-30 08:30:00', 'Abierta'),
+(DEFAULT, 'Petición de Plataforma (ID: 7 - NOMBRE: Plataforma Gestión Formación)', 'desa@opf.gob', 'infra@opf.gob', '2024-05-30 14:05:56', 'Abierta')
+;
+
+
+

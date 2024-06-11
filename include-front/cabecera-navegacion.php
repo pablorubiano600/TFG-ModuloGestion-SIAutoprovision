@@ -1,6 +1,7 @@
 <!-- INICIO Página: cabecera-navegacion.php-->
 
-<?php
+<?php       
+  //************************ Inicio CÓDIGO PARA EL LOGIN ********************* */
   //NOTA: ESTAMOS REALIZANDO UNA SIMULACIÓN DE INTEGRACIÓN con el módulo IAM
   //Por ese motivo no estamos realizando todos los controles de seguridad que serían pertinentes.
   
@@ -58,6 +59,7 @@
       $hacerLogoutPost = "No";
   }
   
+  //************************ Fin CÓDIGO PARA EL LOGIN ********************* */
 ?>
 
 <!-- 
@@ -118,14 +120,10 @@
             }
             else{
               echo "SESION_usuarioAutorizado: False";
-            }
-            
-            echo "<br>";
-            echo "SESION_nombreUsuario: ".$_SESSION["nombreUsuario"];
-            echo "<br>";
-            echo "miUsuarioPost: ".$miUsuarioPost;
-            echo "<br>";
-            echo "hacerLogoutPost: ".$hacerLogoutPost; 
+            }            
+            echo "<br>SESION_nombreUsuario: ".$_SESSION["nombreUsuario"];          
+            echo "<br>miUsuarioPost: ".$miUsuarioPost;            
+            echo "<br>hacerLogoutPost: ".$hacerLogoutPost; 
             */
         ?>
 
